@@ -15,7 +15,7 @@
 # Build stage
 FROM node:18 AS builder 
 
-WORKDIR /openkf-web
+WORKDIR openkf-web
 
 COPY /web .
 RUN npm set registry http://registry.npm.taobao.org/ \ 
